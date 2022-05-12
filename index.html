@@ -304,6 +304,27 @@
 	</div>
 </div>
 
-</article>	       	 
+</article>	
+<script type="text/javascript" src="css/BS/js/bootstrap.min.js"></script>       						
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/click-carousel.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#container").clickCarousel({margin: 10});	
+});		
+</script>
+<script type="text/javascript">
+	$('ul.nav li.dropdown').hover(function(){
+		$('ul.dropdown-menu',this).fadeIn();},
+		function(){
+		$('ul.dropdown-menu',this).fadeOut();});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('img').on('click',function(){
+		$('.modal img').attr('src',this.src);
+		});
+	});
+</script>            	 
 </body>
 </html>
