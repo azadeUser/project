@@ -14,7 +14,6 @@
 body{
        background:#dddddd;
        direction: rtl;
-      
       font-family:'yekan';
        
      }
@@ -250,7 +249,7 @@ overflow: hidden;
  line-height: 24px;
 }
 .social-icons{
-
+text-align: center;
 margin-top: 20px;
  
 }
@@ -265,7 +264,7 @@ margin-top: 20px;
 .social-icons h4{
  color: #eee;
  text-align: center;
- margin-left: 72px;
+ 
 }
  /* ******************************* */ 
  

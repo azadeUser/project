@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bs/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/bs/css/bootstrap-3.2.rtl.css">
-   		 <link rel="stylesheet" href="css/fs/font-awesome.min.css"/>
+   		 <link rel="stylesheet" href="css/fs/font-awesome.min.css">
    		 <link rel="stylesheet" href="css/styles2.css"/>
    		 <link rel="stylesheet" href="css/reset.css"/>
+		<script src="css/bs/js/bootstrap.min.js "></script>
    		 <script src="js/jquery-1.11.3.min.js"></script>
     <title></title>
 </head>
@@ -16,13 +17,13 @@
     <header id="home">
 		<div class="row header">
 			<div class="container">
-				<div class="col-sm-5  col-xs-12 header-content">
+				<div class="col-sm-9 header-content">
 					<img src="img/logo.jpg" class="img-responsive" alt="logo">
 						<h1 >هنر ایرانی</h1>
 				</div>
-				<div class="col-sm-3 col-sm-offset-4 col-xs-12  header-content">
-					<a href="#"><i class="fa fa-user fa-x"></i>عضویت</a>
-					<a href="#"><i class="fa fa-lock fa-x"></i>ورود</a>
+				<div class="col-sm-3 header-content">
+					<a href="#" style="font-size: 18px; margin-top: 10px;"><i class="fa fa-user fa-xl"></i>عضویت</a>
+					<a href="#" style="font-size: 18px;"><i class="fa fa-lock fa-xl"></i>ورود</a>
 				</div>
 			</div>	
 		</div>	
@@ -153,15 +154,13 @@
 <div class="insertAgahi col-xs-10">
 <h2>ثبت آگهی رایگان</h2>
 <div class="line3"></div>
-<form class="form-horizontal ">
+<form class="form-horizontal" action="" >
 <div class="form-group">
-   <label for="input1" class="control-label col-xs-2 " >عنوان آگهی</label> 
-   <div class="col-xs-10">
-  <input type="text" class="form-control " id="input1" placeholder="عنوان آگهی" ></div>
-  </div>
+   <label for="input1" class="control-label col-xs-4 " >عنوان آگهی</label> 
+   <input type="text" class="form-control col-xs-8" id="input1" placeholder="عنوان آگهی" required></div>
    <div class="form-group">
-   <label class="control-label col-sm-2 col-sm-offset-1" >محصولات</label>   
-    <select class="col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 form-control aas" name="agahi-mahsol">
+   <label class="control-label col-xs-4 " >محصولات</label>   
+    <select class="col-xs-8 form-control aas" name="agahi-mahsol">
         <option value="1">سفال وسرامیک</option>
         <option value="2">چوب</option>
         <option value="3">فلز</option>
@@ -174,8 +173,8 @@
 </div>
 <div class="line4"></div>
 <div class="form-group">	
-    <label class="control-label col-sm-2 col-sm-offset-1" >استان</label>   
-    <select class="form-control col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 aas">
+    <label class="control-label col-xs-4 " >استان</label>   
+    <select class="form-control col-xs-8 aas">
                             
                             <option value="2">آذربایجان شرقی</option>
                             <option value="3">آذربایجان غربی</option>
@@ -211,8 +210,8 @@
         </select>
         </div>
     <div class="form-group">	
-    <label class="control-label col-sm-2 col-sm-offset-1" >شهرستان</label>   	
-    <select name="ostan "  class="col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 form-control aas">
+    <label class="control-label col-xs-4" >شهرستان</label>   	
+    <select name="ostan "  class="col-xs-8 form-control aas">
                             <option value="1">شهر</option>
                             <option value="2">تبریز</option>
                             <option value="3">آذربایجان غربی</option>
@@ -229,25 +228,20 @@
         </select>
         </div>
         <div class="form-group">
-        <label class="control-label col-sm-2 col-sm-offset-1" >شرح آگهی</label>  
-        <textarea class="form-control col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1" rows="3"></textarea>
+        <label class="control-label col-xs-4 " >شرح آگهی</label>  
+        <textarea class="form-control col-xs-8 " rows="3" ></textarea>
         </div>
-        <div class="line4"></div>
-        <div class="form-group" >
-        <label class="control-label col-sm-4 col-sm-offset-1" >می توانید تا پنج عکس بارگذاری کنید</label> 
-        <button type="button" class="btn btn-default col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1" style="background-color:rgba(89, 148, 183, 0.74);">بارگذاری</button>
-        </div>
-        <div class="line4"></div>
+        
         <div class="form-group">
-        <label class="control-label col-sm-2 col-sm-offset-1" for="inputEmail" >ایمیل</label>
-        <input type="email" class="form-control col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 " id="inputEmail" placeholder="ایمیل">
+        <label class="control-label  col-xs-4" for="inputEmail" >ایمیل</label>
+        <input type="email" class="form-control col-xs-8 " id="inputEmail" placeholder="ایمیل" required>
         </div>
-        <div class="form-group">
-        <label class="control-label col-sm-2 col-sm-offset-1"  for="input2">شماره تماس</label>
-        <input type="text" class="form-control col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 " id="input2" placeholder="شماره تماس">	
+		<div class="form-group">
+        <label class="control-label col-xs-4"  for="input2">شماره تماس</label>
+        <input type="number" class="form-control col-xs-8" pattern="09(1[0-9]|3[1-9]|3[0-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}" id="input2" placeholder="شماره تماس" required>	
         <br><br><br><br>			
         <p style="text-align: center;">با کلیک بر روی دکمه ثبت آگهی موافقت خود را با قوانین و شرایط استفاده از سایت اعلام می کنید.</p><br>
-        <button type="button" class="btn btn-default col-sm-2 pull-left" style="margin:20px;background-color:rgba(89, 148, 183, 0.74);">ثبت آگهی</button></div>
+        <button type="submit" class="btn btn-default "  style="border:none; float:left;margin:20px 0;background-color:rgba(89, 148, 183, 0.74);padding: 10px 40px;">ثبت آگهی</button></div>
 </form>
 </div>
 </article>
@@ -272,6 +266,7 @@
 		<a>کدپستی:93938737377</a><br>
 		<a>پشتیبانی خرید:8719515-0910</a><br>
 		<a>ایمیل پشتیبانی:rahimiazadeh712@gmail.com</a>
+		<br><br>
 	</div>
 	<div class="col-sm-4">
 		<h2>خدمات مشتریان</h2>
@@ -279,7 +274,7 @@
 		<a href="#">حساب کاربری من</a><br>
 		<a href="#">راهنمای خرید از سایت</a><br>
 		<a href="#">نحوه پرداخت وارسال</a>
-
+		<br><br>
 	</div>
 	<div class="col-sm-4">
 		<h2 >درباره ما</h2>
@@ -287,11 +282,12 @@
 		<a href="#">همکاری با هنرمندان</a><br>
 		<a href="#">تبلیغات در سایت</a><br>
 		<a href="#">پرسش و پاسخ</a>
+		<br><br>
 	</div>
 	</div>
 	
 	<div class="row content-social">
-	<div class="social-icons col-sm-offset-4 col-sm-4 col-sm-offset-4 col-xs-12">
+	<div class="social-icons ">
 				<a href="#"><img src="img/social/facebook-k.png" alt="Facebook"></a>
 					<a href="#"><img src="img/social/twiter-k.png" alt="Twitter"></a>
 					<a href="#"><img src="img/social/google-plus-k.png" alt="Google Plus"></a>
