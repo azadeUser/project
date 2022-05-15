@@ -524,7 +524,7 @@ blockquote.pull-left {
     right: auto;
   }
   .col-md-pull-3 {
-    left: 25%;
+       left: 25%;
     right: auto;
   }
   .col-md-pull-2 {
@@ -648,7 +648,8 @@ blockquote.pull-left {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: right;
   }
-  .col-lg-12 {
+  
+   .col-lg-12 {
     width: 100%;
   }
   .col-lg-11 {
@@ -912,7 +913,18 @@ th {
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    text-align: left;
+    text-align: left;   
+    font-family: yekan;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+@media (max-width: 768px) {
+  .form-horizontal .control-label {
+    text-align: left;   
+    font-family: yekan;
+    font-style: normal;
+    font-weight: normal;
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -1533,4 +1545,5 @@ th {
 .has-error .form-control-feedback {
   color: #a94442;
 }
+
 /*# sourceMappingURL=bootstrap-rtl.css.map */
